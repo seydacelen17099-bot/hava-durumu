@@ -1,0 +1,42 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+         /* Gece Modu Renkleri */
+        body.gece-modu { background:black; }
+        body.gece-modu .kart-ana, body.gece-modu .gunluk-kart { background: #2d2d2d; color: white; }
+        body.gece-modu h1 { color: #3a3df8; }
+         body { 
+            background: linear-gradient(135deg, #194398 0%, #dcedc1 100%); 
+            min-height: 100vh; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            transition:05s ease;
+            padding: 20px;
+            /* Ana geçiş efekti */
+
+        }
+       body.arka-plan-bulutlu { background: linear-gradient(135deg, #40505c 0%, #3b4c5e 100%) !important; }
+
+body.arka-plan-gunesli { background: linear-gradient(135deg, #ffb32f 0%, #efa844 100%) !important; }
+
+body.arka-plan-yagmurlu { background: linear-gradient(135deg, #294c9e 0%, #586c94 100%) !important; }
+
+
+
+        .main-container { width: 100%; max-width: 500px; display: flex; flex-direction: column; gap: 20px; }
+
+        .header-bolumu { text-align: center; }
+        .tema-button { padding: 8px 16px; cursor: pointer; border-radius: 20px; border: none; background:black; margin-top: 10px; font-weight: bold; }
+
+        .kart-ana { background: whitesmoke; padding: 30px; border-radius: 25px; text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.1); transition: 0.3s; }
+        .hava-ikon { font-size: 70px; margin-bottom: 10px; }
+        .derece-buyuk { font-size: 60px; font-weight: bold; }
+
+        .haftalik-bolum { display: flex; gap: 10px; overflow-x: auto; padding: 10px 0; }
+        .gunluk-kart { 
+            background: whitesmoke; padding: 15px; border-radius: 15px; text-align: center; 
+            flex: 1; cursor: pointer; min-width: 90px; transition: 0.3s; 
+        }
+          .gunluk-kart:hover { transform: translateY(-5px); background: #f0fcf7; }
+        body.gece-modu .gunluk-kart:hover { background: #3d3d3d; }
+     
+ 

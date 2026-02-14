@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hava Durumu Planlayıcı</title>
+<link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+
+
+    </div>
+
+    <div class="main-container">
+        <header class="header-bolumu">
+            <h1>HAVA DURUM PANELİ</h1>
+            <button id="buton-tema" class="tema-buton" onclick="temayiDegistir()">🌙 <b>GECE MOD</b></button>
+        </header>
+
+        <section class="kart-ana">
+            <div id="ana-ikon" class="hava-ikon">☀️</div>
+            <h2 id="ana-sehir">İstanbul</h2>
+     
+            <div id="ana-derece" class="derece-buyuk">26°C</div>
+            <p id="ana-durum">Güneşli</p>
+        </section>
+
+        <div class="haftalik-bolum">
+            <div class="gunluk-kart" onclick="guncelle('25°C', 'bulutlu', '⛅')">
+           <p>PAZARTESİ</p><span>⛅</span><br><b>25°</b>
+            </div>
+            <div class="gunluk-kart" onclick="guncelle('30°C', 'gunesli', '☀️')">
+            <p>SALI</p><span>☀️</span><br><b>30°</b>
+            </div>
+            <div class="gunluk-kart" onclick="guncelle('22°C', 'yagmurlu', '🌧️')">
+            <p>ÇARŞAMBA</p><span>🌧️</span><br><b>22°</b>
+            </div>
+            <div class="gunluk-kart" onclick="guncelle('28°C', 'gunesli', '☀️')">
+           <p>PERŞEMBE</p><span>☀️</span><br><b>28°</b>
+            </div>
+            <div class="gunluk-kart" onclick="guncelle('25°C', 'yagmurluu', '🌧️')">
+             <p>CUMA</p><span>🌧️</span><br><b>25°</b>
+            </div>
+            <div class="gunluk-kart" onclick="guncelle('24°C', 'bulutlu', '⛅')">
+            <p>CUMARTESİ</p>⛅<span></span><br><b>24°</b>
+            </div>
+            <div class="gunluk-kart" onclick="guncelle('28°C', 'gunesli', '☀️')">
+            <p>PAZAR</p><span>☀️</span><br><b>28°</b>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
